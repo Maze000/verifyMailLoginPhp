@@ -1,8 +1,8 @@
 <?php
 	$server="localhost";
-	$user="id18757175_otro";
-	$password="q9/m(Ra1RDYKd?Wg";
-	$bd="id18757175_otro1";
+	$user="user";
+	$password="password";
+	$bd="db";
 
 	$connection = mysqli_connect($server, $user, $password, $bd);
 	

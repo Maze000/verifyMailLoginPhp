@@ -18,7 +18,7 @@ if(isset($_POST['mail']) AND isset($_POST['password'])){
 
 	$insert = mysqli_query($connection, $sql);
 	
-	$subject = 'Signup | Verification'; 
+	$subject = 'Maze000 -0- Verification'; 
 	
 	$link='https://yourWebSite/verify.php?mail='.$mail.'&hash='.$hash.'';
 	  

@@ -20,13 +20,13 @@ if(isset($_POST['mail']) AND isset($_POST['password'])){
 	
 	$subject = 'Signup | Verification'; 
 	
-	$link='https://marionettegames.000webhostapp.com/verifyCorrection2/verify.php?mail='.$mail.'&hash='.$hash.'';
+	$link='https://yourWebSite/verify.php?mail='.$mail.'&hash='.$hash.'';
 	  
 	$message="<strong>Activate your account by link</strong><br/>";
 	$message.="<span style='color:#2980B9'>Mail:</span>" .$mail."<br/>";
 	$message.="<span style='color:#2980B9'>Password:</span>".$password."<br/>";
 	$message.="<a style='font-weight:bold;color:#2BA6CB;' target='_blank' href=".$link."> Click Here </a>";
-	$headers = 'From:infimo000@gmail.com' . "\r\n"; 
+	$headers = 'From:yourMail' . "\r\n"; 
 	$headers.="Content-type: text/html; charset=UTF-8";          
 	
 	$mail=mail($mail, $subject, $message, $headers); 

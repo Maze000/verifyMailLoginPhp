@@ -1,0 +1,7 @@
+CREATE TABLE `user` (
+`id` INT( 10 ) NOT NULL AUTO_INCREMENT PRIMARY KEY ,
+`mail` TEXT NOT NULL ,
+`password` VARCHAR( 32 ) NOT NULL ,
+`hash` VARCHAR( 32 ) NOT NULL ,
+`active` INT( 1 ) NOT NULL DEFAULT '0'
+) ENGINE = MYISAM ;

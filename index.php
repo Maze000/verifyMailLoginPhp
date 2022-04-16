@@ -14,7 +14,7 @@ if(isset($_POST['mail']) AND isset($_POST['password'])){
 	$hash = md5(rand(0,1000) );
 	
 
-	$sql = "INSERT INTO user (mail,password,hash) values('$mail','$password','$hash')";
+	$sql = "INSERT INTO user (mail,password,hash) values('$mail',md5('$password'),'$hash')";
 
 	$insert = mysqli_query($connection, $sql);
 	

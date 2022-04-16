@@ -6,7 +6,7 @@
             $msg='';
             if(isset($_POST['mail']) AND isset($_POST['password'])){
                 $mail = $_POST['mail'];
-                $password = $_POST['password'];
+                $password = md5($_POST['password']);
                              
                 $search = mysqli_query($connection,"SELECT mail, password, active FROM user WHERE mail='".$mail."' AND password='".$password."' AND active='1'") or die(mysql_error()); 
                 $match  = mysqli_num_rows($search);
